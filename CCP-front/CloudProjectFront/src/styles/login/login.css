@@ -1,0 +1,164 @@
+/*!* 页面容器样式 *!*/
+/*.login-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*    background: linear-gradient(135deg, #2a2a72, #009ffd); !* 蓝色渐变背景 *!*/
+/*}*/
+
+/*!* 登录框样式 *!*/
+/*.login-box {*/
+/*    background: white;*/
+/*    padding: 2rem;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    width: 100%;*/
+/*    max-width: 400px;*/
+/*}*/
+
+/*!* 标题样式 *!*/
+/*.login-title {*/
+/*    text-align: center;*/
+/*    margin-bottom: 1.5rem;*/
+/*    font-size: 1.8rem;*/
+/*    color: #333;*/
+/*}*/
+
+/*!* 表单组样式 *!*/
+/*.form-group {*/
+/*    margin-bottom: 1.5rem;*/
+/*}*/
+
+/*.form-group label {*/
+/*    display: block;*/
+/*    margin-bottom: 0.5rem;*/
+/*    font-size: 1rem;*/
+/*    color: #555;*/
+/*}*/
+
+/*.form-group input {*/
+/*    width: 100%;*/
+/*    padding: 0.5rem;*/
+/*    font-size: 1rem;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    outline: none;*/
+/*    transition: border-color 0.3s ease;*/
+/*}*/
+
+/*.form-group input:focus {*/
+/*    border-color: #009ffd;*/
+/*}*/
+
+/*!* 登录按钮样式 *!*/
+/*.login-button {*/
+/*    width: 100%;*/
+/*    padding: 0.75rem;*/
+/*    font-size: 1rem;*/
+/*    color: white;*/
+/*    background: #009ffd;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.login-button:hover {*/
+/*    background: #007bbb;*/
+/*}*/
+
+/*!* 注册提示样式 *!*/
+/*.register-tip {*/
+/*    text-align: center;*/
+/*    margin-top: 1rem;*/
+/*    font-size: 0.9rem;*/
+/*    color: #666;*/
+/*}*/
+
+/*.register-tip a {*/
+/*    color: #009ffd;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    cursor: pointer;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.register-tip a:hover {*/
+/*    color: #007bbb;*/
+/*}*/
+
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.register-prompt {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+.register-prompt a {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register-prompt a:hover {
+    text-decoration: underline;
+}

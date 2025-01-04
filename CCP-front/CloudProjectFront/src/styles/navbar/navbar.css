@@ -1,0 +1,195 @@
+/*.navbar {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 70px;*/
+/*    background: url("@/assets/导航栏背景.png") no-repeat center center; !* 背景图片 *!*/
+/*    background-size: cover;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    z-index: 1000;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); !* 添加阴影效果 *!*/
+/*}*/
+
+/*.navbar-container {*/
+/*    width: 100%;*/
+/*    max-width: 1500px;*/
+/*    margin: 0 auto;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.navbar-title {*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: bold;*/
+/*    color: white;*/
+/*    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);*/
+/*    margin-left: 20px; !* 标题左移 *!*/
+/*}*/
+
+/*.navbar-menu {*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    padding: 0;*/
+/*    flex: 5; !* 弹性占位 *!*/
+/*    justify-content: flex-end; !* 菜单项向右对齐 *!*/
+/*    margin-right: 0%; !* 整体右移 *!*/
+/*}*/
+
+/*.navbar-menu li {*/
+/*    margin-left: 1.5rem; !* 菜单项之间的间距 *!*/
+/*}*/
+
+/*.navbar-menu a {*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    font-size: 1rem;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.navbar-menu a:hover {*/
+/*    color: #00d4ff; !* 悬停变色 *!*/
+/*}*/
+
+/*.login-button {*/
+/*    padding: 0.5rem 1rem;*/
+/*    font-size: 1rem;*/
+/*    color: white;*/
+/*    background-color: transparent;*/
+/*    border: 1px solid white;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease, color 0.3s ease;*/
+/*    margin-right: 20px; !* 登录按钮靠右 *!*/
+/*}*/
+
+/*.login-button:hover {*/
+/*    background-color: white;*/
+/*    color: #333;*/
+/*}*/
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: url("@/assets/导航栏背景.png") no-repeat center center; /* 背景图片 */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    justify-content: space-between; /* 标题和右侧区域分开对齐 */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* 两端对齐 */
+    padding: 0 20px; /* 两侧留出空间 */
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-right: auto; /* 保证标题固定在左侧 */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* 占据中间区域 */
+    justify-content: flex-end; /* 菜单项向右对齐 */
+}
+
+.navbar-menu li {
+    margin-left: 1.5rem; /* 菜单项之间的间距 */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #00d4ff; /* 悬停变色 */
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* 保证按钮在最右边 */
+}
+
+.login-button,
+.register-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: white;
+    color: #333;
+}
+
+.user-name {
+    color: #ff9800; /* 更亮的橙色 */
+    font-weight: bold; /* 加粗字体 */
+    font-size: 18px; /* 字体大小 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 增加轻微的文字阴影 */
+    cursor: pointer; /* 鼠标悬浮显示为点击状态 */
+}
+.user-info {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px); /* 在名字显示的下方 */
+    left: 0;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    padding: 10px 0;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f5f5f5;
+    color: #007bff;
+}

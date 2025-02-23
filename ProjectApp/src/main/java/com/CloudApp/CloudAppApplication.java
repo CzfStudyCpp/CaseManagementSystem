@@ -26,6 +26,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //        "com.CloudApp.LoginAndRegister.Controller",
 //        "com.CloudApp.RedisCommon.Config",
 //        "com.CloudApp.RedisCommon.Service"})
+//run application
 public class CloudAppApplication {
 
     public static void main(String[] args) {

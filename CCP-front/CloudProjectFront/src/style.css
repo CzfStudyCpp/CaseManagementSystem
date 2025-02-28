@@ -1,0 +1,147 @@
+:root {
+  /* 基础颜色 */
+  --primary-color: #0056b3; /* 主色调：科技蓝 */
+  --secondary-color: #52c4b9; /* 辅助色：浅绿 */
+  --background-color: #f8f9fa; /* 背景色：浅灰 */
+  --text-color: #333333; /* 字体颜色：深灰 */
+  --card-background: #ffffff; /* 卡片背景：白色 */
+
+  /* 渐变背景 */
+  --gradient-background: linear-gradient(135deg, #2a2a72, #009ffd);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.hero {
+  background: var(--gradient-background); /* 蓝紫渐变背景 */
+  color: #fff; /* 白色字体 */
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 字体阴影增加立体感 */
+}
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+  background: var(--secondary-color); /* 鼠标悬停时颜色变化 */
+  transform: translateY(-2px); /* 悬停时按钮略微上浮 */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  background-color: var(--card-background);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 微阴影提升科技感 */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* 添加动画效果 */
+}
+.card:hover {
+  transform: translateY(-10px); /* 悬停时微微上浮 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 悬停时阴影加深 */
+}
+.card h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+.card p {
+  color: var(--text-color);
+}
+
+
+
+#app {
+  display: flex;            /* 使 app 作为一个 Flexbox 容器 */
+  flex-direction: column;   /* 设置为垂直排列 */
+  min-height: 100vh;        /* 占据整个窗口高度 */
+  width: 100%;              /* 设置为占满整个窗口宽度 */
+  max-width: 100%;          /* 移除宽度限制，使内容能自适应更大的屏幕 */
+  padding: 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;   /* 确保 padding 不影响元素的整体宽度 */
+}
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}*/
+
+/*
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column; !* 小屏幕上内容改为垂直排列 *!
+  }
+
+  .sidebar {
+    width: 100%; !* 侧边栏在小屏幕上占满整个宽度 *!
+  }
+
+  .project-card {
+    width: 100%; !* 小屏幕上卡片占满整个宽度 *!
+  }
+  }
+*/
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+    text-align: left; /* 小屏幕时内容靠左对齐 */
+  }
+
+  .card {
+    margin-bottom: 20px; /* 小屏幕卡片之间增加间距 */
+  }
+}
+
+

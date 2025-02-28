@@ -1,0 +1,50 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+app:
+  upload:
+    directory: /tmp/uploads/businessLicenses/
+
+spring:
+  jackson:
+    default-property-inclusion: always       # 包含所有字段，即使为空
+    date-format: yyyy-MM-dd'T'HH:mm:ss       # ISO 8601 日期时间格式，推荐加上 'T' 符号（避免歧义）
+    time-zone: GMT+8                         # 设置时区为 GMT+8
+    serialization:
+      write-dates-as-timestamps: false       # 关闭时间戳形式，启用可读格式
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myprojectdb?useUnicode=true&characterEncoding=utf8
+    username: czf
+    password: CZFtofuture2024.
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      lettuce:
+        pool:
+          min-idle: 10
+          max-active: 100
+          max-idle: 10
+
+  mail:
+    host: smtp.qq.com          # SMTP 服务器地址
+    port: 587                  # SMTP 端口
+    username: 2018249814@qq.com  # 邮箱账号
+    password: bzawwxfmfrzebcag  # 邮箱密码
+    protocol: smtp             # 使用的协议
+    tls: true                  # 是否启用 TLS
+    default-encoding: UTF-8    # 邮件编码
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 输出 SQL 日志
+    map-underscore-to-camel-case: true  # 关闭数据库下划线自动转驼峰

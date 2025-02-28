@@ -1,0 +1,148 @@
+
+/* 页面整体样式 */
+.homepage {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    color: #333;
+}
+
+/* 首页顶部介绍 */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #2a2a72, #009ffd); /* 蓝色渐变背景 */
+    transition: background 0.3s ease; /* 鼠标悬浮背景过渡 */
+}
+
+.hero:hover {
+    background: linear-gradient(135deg, #009ffd, #2a2a72); /* 鼠标悬浮时背景变色 */
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+.hero-title:hover {
+    color: #f7f7f7; /* 鼠标悬停时，标题变色 */
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    display: block; /* 默认显示 */
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.hero:hover .hero-subtitle {
+    color: #ffde59; /* 鼠标悬浮时的励志语句颜色 */
+    font-style: italic;
+}
+/* 公告栏和需求榜单的外层容器 */
+.notice-demand {
+    display: flex; /* 设置为水平排列 */
+    justify-content: space-between; /* 子元素水平对齐并保持间距 */
+    gap: 20px; /* 子元素之间的间隙 */
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.48); /* 背景色（可选） */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* 公告栏和需求榜单的子元素样式 */
+.notice, .demand {
+    flex: 1; /* 平分宽度 */
+    padding: 15px;
+    background: #fff; /* 子元素背景色 */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+}
+/* 服务保障 */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    color: #333;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #0056b3;
+}
+
+.card p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 合作案例 */
+.cases {
+    padding: 50px 20px;
+    background: #f0f4f8;
+    text-align: center;
+}
+
+.case-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.case-card {
+    width: 200px;
+    text-align: center;
+}
+
+.case-card img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.case-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.case-card p {
+    font-size: 14px;
+    color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

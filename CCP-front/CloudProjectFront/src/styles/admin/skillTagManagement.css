@@ -1,0 +1,115 @@
+
+.skill-tag-management {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.add-skill-form,
+.modal-content {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-skill-form .form-group,
+.modal-content .form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-button,
+.save-button,
+.cancel-button,
+.delete-button,
+.edit-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #2a72d4;
+    color: #fff;
+}
+
+.add-button:hover {
+    background-color: #1a58a6;
+}
+
+.edit-button {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+.edit-button:hover {
+    background-color: #ec971f;
+}
+
+.delete-button {
+    background-color: #d42a2a;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #a61a1a;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.skill-tag-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
